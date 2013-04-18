@@ -3,9 +3,8 @@ Omrails::Application.routes.draw do
 
   resources :pins
 
-
   devise_for :users
-  match 'users/:id' => 'users#show', as: :user
+  match 'users/:id' => 'users#show', as: :users
 
 get 'about' => 'pages#about'
 
